@@ -63,7 +63,7 @@ public:
   //! @param segments An array of size @ref length containing the raw segment values
   //! @param length The number of digits to be modified
   //! @param pos The position from which to start the modification (0 - leftmost, 3 - rightmost)
-  void setSegments(const uint8_t segments[], uint8_t length = 4, uint8_t pos = 0);
+  void setSegments(const uint8_t segments[], uint8_t length = 6, uint8_t pos = 0);
 
   //! Clear the display
   void clear();
@@ -79,7 +79,7 @@ public:
   //!        fits to the number of digits requested (for example, if two digits are to be displayed,
   //!        the number must be between 0 to 99)
   //! @param pos The position of the most significant digit (0 - leftmost, 3 - rightmost)
-  void showNumberDec(int num, bool leading_zero = false, uint8_t length = 4, uint8_t pos = 0);
+  void showNumberDec(int num, bool leading_zero = false, uint8_t length = 6, uint8_t pos = 0);
 
   //! Display a decimal number, with dot control
   //!
@@ -104,7 +104,7 @@ public:
   //!        fits to the number of digits requested (for example, if two digits are to be displayed,
   //!        the number must be between 0 to 99)
   //! @param pos The position of the most significant digit (0 - leftmost, 3 - rightmost)
-  void showNumberDecEx(int num, uint8_t dots = 0, bool leading_zero = false, uint8_t length = 4, uint8_t pos = 0);
+  void showNumberDecEx(int num, uint8_t dots = 0, bool leading_zero = false, uint8_t length = 6, uint8_t pos = 0);
 
   //! Display a hexadecimal number, with dot control
   //!
@@ -129,7 +129,7 @@ public:
   //!        fits to the number of digits requested (for example, if two digits are to be displayed,
   //!        the number must be between 0 to 99)
   //! @param pos The position of the most significant digit (0 - leftmost, 3 - rightmost)
-  void showNumberHexEx(uint16_t num, uint8_t dots = 0, bool leading_zero = false, uint8_t length = 4, uint8_t pos = 0);
+  void showNumberHexEx(uint16_t num, uint8_t dots = 0, bool leading_zero = false, uint8_t length = 6, uint8_t pos = 0);
 
   //! Translate a single digit into 7 segment code
   //!
